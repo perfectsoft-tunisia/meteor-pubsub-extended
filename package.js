@@ -1,8 +1,8 @@
 Package.describe({
   summary: "Control mergebox of publish endpoints",
   version: '0.1.3',
-  name: 'peerlibrary:control-mergebox',
-  git: 'https://github.com/peerlibrary/meteor-control-mergebox.git'
+  name: 'owslab:pubsub-extended',
+  git: 'https://github.com/owslab/meteor-control-mergebox.git'
 });
 
 Package.onUse(function (api) {
@@ -43,7 +43,7 @@ Package.onTest(function (api) {
 
   // Internal dependencies.
   api.use([
-    'peerlibrary:control-mergebox'
+    'owslab:pubsub-extended'
   ]);
 
   // 3rd party dependencies.
