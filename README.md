@@ -21,7 +21,7 @@ Installation
 ------------
 
 ```
-meteor add owslab:pubsub-extended
+meteor add giangndm:pubsub-extended
 ```
 
 Discussion

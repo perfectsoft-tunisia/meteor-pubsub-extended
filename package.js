@@ -1,8 +1,8 @@
 Package.describe({
   summary: "Control mergebox of publish endpoints",
   version: '0.1.3',
-  name: 'owslab:pubsub-extended',
-  git: 'https://github.com/owslab/pubsub-extended.git'
+  name: 'giangndm:pubsub-extended',
+  git: 'https://github.com/spidercpsf/meteor-pubsub-extended.git'
 });
 
 Package.onUse(function (api) {
@@ -43,7 +43,7 @@ Package.onTest(function (api) {
 
   // Internal dependencies.
   api.use([
-    'owslab:pubsub-extended'
+    'giangndm:pubsub-extended'
   ]);
 
   // 3rd party dependencies.
