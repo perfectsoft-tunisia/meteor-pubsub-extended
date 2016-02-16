@@ -1,12 +1,15 @@
-control-mergebox
+pubsub-extended
 ================
 
 This Meteor smart package extends [publish endpoints](http://docs.meteor.com/#/full/meteor_publish)
-with control of the [mergebox](https://meteorhacks.com/understanding-mergebox) for a given
+with control of the [mergebox, ddp protocol](https://meteorhacks.com/understanding-mergebox) for a given
 publish endpoint function.
 
-Publish function's `this` is extended with `this.disableMergebox()` which when called will
-[disable mergebox](https://github.com/meteor/meteor/issues/5645) for current publish endpoint.
+Publish function's `this` is extended with 
+  `this.disableMergebox()` which when called will [disable mergebox](https://github.com/meteor/meteor/issues/5645) for current publish endpoint.
+  `this.disableAutoAdd()` which when called will [disable auto adding more data, ddp added msg] for current publish endpoint.
+  `this.disableAutoRemove()` which when called will [disable auto remove data, ddp removed msg] for current publish endpoint.endpoint.
+  `this.disableAutoChanged()` which when called will [disable auto changed data, ddp changed msg] for current publish endpoint.endpoint.
 
 By disabling mergebox one chooses to send possibly unnecessary data to clients (because
 they already have it) and not maintain on the server side images of clients' data, thus
@@ -18,7 +21,7 @@ Installation
 ------------
 
 ```
-meteor add peerlibrary:control-mergebox
+meteor add owslab:pubsub-extended
 ```
 
 Discussion
