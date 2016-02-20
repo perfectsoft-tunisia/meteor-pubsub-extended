@@ -24,6 +24,7 @@ Package.onUse(function (api) {
   ]);
 
   api.addFiles([
+    'static_publish.js',
     'livedata_server.js',
     'server.coffee'
   ], 'server');

@@ -11,6 +11,8 @@ Publish function's `this` is extended with
   `this.disableAutoRemove()` which when called will [disable auto remove data, ddp removed msg] for current publish endpoint.endpoint.
   `this.disableAutoChanged()` which when called will [disable auto changed data, ddp changed msg] for current publish endpoint.endpoint.
 
+Added Meteor.staticPublish method for static data
+
 By disabling mergebox one chooses to send possibly unnecessary data to clients (because
 they already have it) and not maintain on the server side images of clients' data, thus
 reducing CPU and memory load on servers.
