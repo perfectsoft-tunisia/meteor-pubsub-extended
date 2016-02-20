@@ -1,6 +1,6 @@
 Package.describe({
-  summary: "Control mergebox of publish endpoints",
-  version: '0.1.3',
+  summary: "Extending publish method",
+  version: '1.0.1',
   name: 'giangndm:pubsub-extended',
   git: 'https://github.com/spidercpsf/meteor-pubsub-extended.git'
 });
